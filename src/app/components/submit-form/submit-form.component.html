@@ -1,0 +1,28 @@
+<div class="form-container">
+      <mat-form-field>
+      <h4>FROM ACCOUNT</h4>
+        <mat-select>
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    
+      <mat-form-field>
+        <h4>TO ACCOUNT</h4>
+        <mat-select>
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <h4>AMOUNT</h4>
+        <mat-select>
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+</div>
+<div class="space-l"></div>  

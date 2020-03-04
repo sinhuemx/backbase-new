@@ -1,0 +1,45 @@
+<div class="grid-2_xs-1">
+  <div class="col-4 inline">
+    <div class="space-xl pad-15">
+      <div class="bg-blue">
+        <div class="grid">
+            <div class="col-4 inline">
+                <img class="image-exchange softlight"  src="{{ imageExchange }}">
+            </div>
+            <div class="col-8 inline">
+                <p class="title text-center">Make a transfer</p>
+            </div>
+        </div>
+      </div>
+      <mat-card class="card">
+        <mat-card-content>
+          <app-submit-form></app-submit-form>
+          <mat-card-actions class="corner bg-orange">
+              <button mat-button >SUBMIT</button>
+          </mat-card-actions>
+        </mat-card-content>
+        <div class="space-m"></div>  
+      </mat-card>
+    </div>
+  </div>
+  <div class="col-8 inline">
+    <div class="space-xl pad-15">
+      <div class="bg-blue">
+        <div class="grid">
+            <div class="col-4 inline">
+                <img class="image-exchange softlight"  src="{{ imageSuitCase }}">
+            </div>
+            <div class="col-8 inline">
+                <p class="title text-center">Recents Transactions</p>
+            </div>
+        </div>
+      </div>
+      <mat-card class="col-12">
+       <mat-card-content>
+          <app-search></app-search>
+        </mat-card-content>
+      </mat-card>
+      
+    </div>
+  </div>
+</div>

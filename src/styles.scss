@@ -1,0 +1,142 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$backbase-primary: mat-palette($mat-indigo);
+$backbase-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$backbase-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$backbase-theme: mat-light-theme($backbase-primary, $backbase-accent, $backbase-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($backbase-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+body {
+ background: url(./assets/background.jpg) no-repeat center center fixed;
+    overflow-x: hidden ;
+    mix-blend-mode: inherit;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.top{
+    width: 100%;
+    position: fixed;
+    top: 1px;
+}
+.image-logo{
+    width:35vh;
+    height: auto;
+}
+.image-avatar{
+    width:35vh;
+    height: auto;
+}
+.image-exchange{
+    width: 35px;
+    height: auto;
+    padding-inline-start: 15px;
+    padding-top: 5px;
+}
+.title{
+    color: #ffffff;
+}
+.multiply{
+    mix-blend-mode: multiply;
+}
+.softlight{
+    mix-blend-mode: soft-light;
+}
+.bg-menu{
+    background-color: #f8f8f8;
+}
+.bg-line{
+    background-color: #ff6600;
+    height: 5px;
+}
+.space-m{
+    margin-top: 30px;
+}
+.space-l{
+    margin-top: 70px;
+}
+.space-xl{
+    margin-top: 100px;
+}
+.inline{
+    display: inline;
+}
+.pad-5{
+    padding: 5px;
+}
+.pad-10{
+    padding: 10px;
+}
+.pad-15{
+    padding: 15px;
+}
+.pad-20{
+    padding: 20px;
+}
+.box {
+    background: #f8f8f8;
+  }
+.right{
+    float: right;
+}
+.form-container > * {
+    width: 100%;
+  }
+  .navbar-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    box-shadow: 1px 2px 5px #000;
+    z-index: 9;
+  }
+  .card {
+    max-width: 400px;
+  }
+.bg-blue{
+    background-color: rgb(28, 131, 145);
+    height: 45px;
+  }
+.bg-orange{
+    background-color:#ff6600;
+}
+.corner{
+    border-radius: 8px;
+}
+.submit-form-container{
+    width: 80%;
+}
