@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SubmitFormComponent } from './components/submit-form/submit-form.component';
 import { AppRoutingModule } from './routing/app-routing.module';
 import { SearchComponent } from './components/search/search.component';
+import { TransactionComponent } from './components/transaction/transaction.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SearchComponent } from './components/search/search.component';
     MenuComponent,
     HeaderComponent,
     SubmitFormComponent,
-    SearchComponent
+    SearchComponent,
+    TransactionComponent
   ],
   imports: [
     BrowserModule,
