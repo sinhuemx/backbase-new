@@ -2,8 +2,8 @@
       <mat-form-field>
       <h4>FROM ACCOUNT</h4>
         <mat-select>
-          <mat-option *ngFor="let food of foods" [value]="food.value">
-            {{food.viewValue}}
+          <mat-option *ngFor="let account of accounts" [value]="account.value">
+            {{account.value}}
           </mat-option>
         </mat-select>
       </mat-form-field>
@@ -11,8 +11,8 @@
       <mat-form-field>
         <h4>TO ACCOUNT</h4>
         <mat-select>
-          <mat-option *ngFor="let food of foods" [value]="food.value">
-            {{food.viewValue}}
+          <mat-option *ngFor="let transaction of transactions" [value]="transaction.merchant">
+            <span>{{transaction.merchant}}</span> - <span> {{transaction.amount}}</span>
           </mat-option>
         </mat-select>
       </mat-form-field>
