@@ -21,6 +21,4 @@ foods: Food[] = [
   ngOnInit(): void {
   }
 
-   
-
 }
