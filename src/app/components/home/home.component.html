@@ -14,8 +14,8 @@
       <mat-card class="card">
         <mat-card-content>
           <app-submit-form></app-submit-form>
-          <mat-card-actions class="corner bg-orange">
-              <button mat-button >SUBMIT</button>
+          <mat-card-actions>
+              <button mat-raised-button color="warn">Submit</button>
           </mat-card-actions>
         </mat-card-content>
         <div class="space-m"></div>  
@@ -36,10 +36,32 @@
       </div>
       <mat-card class="col-12">
        <mat-card-content>
-          <app-search></app-search>
+       <div class="grid">
+          <div class="col inline">
+              <app-search></app-search>
+          </div>
+          <div class="col inline">
+            <p >Sort by</p>
+          </div>
+          <div class="col inline">
+            <mat-form-field>
+              <mat-select>
+                <mat-option >
+                  
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="row inline">
+            <button mat-stroked-button>Beneficiary</button>
+          </div>
+          <div class="row inline">
+            <button mat-stroked-button>Ammount</button>
+          </div>
+       </div>
         </mat-card-content>
+        <app-transaction></app-transaction>
       </mat-card>
-      
     </div>
   </div>
 </div>

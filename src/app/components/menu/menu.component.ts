@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  public logo = '../../../assets/assets/logo.jpg';
+  public logo = './../../../assets/logo.jpg';
 
   constructor() { }
 

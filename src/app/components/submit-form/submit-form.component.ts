@@ -30,7 +30,4 @@ export class SubmitFormComponent implements OnInit {
       this.transactions = result;
     });
   }
-
-
-
 }
