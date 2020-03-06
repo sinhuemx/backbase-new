@@ -40,7 +40,7 @@ export class SubmitFormComponent implements OnInit {
   }
 
   onSubmit(fromAcount) {
-    const transactionModified = this.transactions.find((t) => t.merchant = this.toAccount);
+    const transactionModified = this.transactions.find((t) => t.merchant === this.toAccount);
 
     this.getAccountDetails(this.accointId);
 

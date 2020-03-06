@@ -1,7 +1,7 @@
-import { Injectable, EventEmitter } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Transaction } from '../models/transaction.model';
-import {  } from 'protractor';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -10,10 +10,10 @@ export class TransactionService {
 
   private url = '../../assets/data/transactions.json';
 
-  public transactions: EventEmitter<Transaction[]>;
+  public transactions: Subject<Transaction[]>;
 
   constructor(private http: HttpClient) {
-    this.transactions = new EventEmitter<Transaction[]>();
+    this.transactions = new Subject<Transaction[]>();
    }
 
   public getTransactions() {
