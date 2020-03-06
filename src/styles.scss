@@ -50,6 +50,10 @@ body {
     width: 100%;
     position: fixed;
     top: 1px;
+    z-index:11;
+}
+.top-12{
+    margin-top: 12px;
 }
 .image-logo{
     width:35vh;
@@ -71,6 +75,7 @@ body {
 }
 .title{
     color: #ffffff;
+    font-size: 21px;
 }
 .multiply{
     mix-blend-mode: multiply;
@@ -146,4 +151,7 @@ body {
 }
 .white{
     color:white;
+}
+.table-width{
+    width: -webkit-fill-available;
 }
