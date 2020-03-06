@@ -35,7 +35,7 @@ $backbase-theme: mat-light-theme($backbase-primary, $backbase-accent, $backbase-
 
 
 body {
- background: url(./assets/background.jpg) no-repeat center center fixed;
+    background: url(./assets/background.jpg) no-repeat center center fixed;
     overflow-x: hidden ;
     mix-blend-mode: inherit;
     -webkit-background-size: cover;
@@ -133,9 +133,7 @@ body {
     box-shadow: 1px 2px 5px #000;
     z-index: 9;
   }
-  .card {
-    max-width: 400px;
-  }
+  
 .bg-blue{
     background-color: rgb(28, 131, 145);
     height: 45px;
@@ -152,6 +150,8 @@ body {
 .white{
     color:white;
 }
+ 
 .table-width{
     width: -webkit-fill-available;
 }
+ 

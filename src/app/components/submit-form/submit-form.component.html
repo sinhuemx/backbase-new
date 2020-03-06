@@ -12,7 +12,7 @@
 
       <mat-form-field>
         <h4>TO ACCOUNT</h4>
-        <mat-select (selectionChange)="onChangeToAccount($event)">>
+        <mat-select (selectionChange)="onChangeToAccount($event)">
           <mat-option *ngFor="let transaction of transactions" [value]="transaction.merchant">
             <span>{{transaction.merchant}}</span>
           </mat-option>
