@@ -30,4 +30,10 @@ export class SubmitFormComponent implements OnInit {
       this.transactions = result;
     });
   }
+  onSubmit(fromAcount){
+    console.log("kdhalkdhjalsdjaljsdlkajd", fromAcount);
+  }
+  onChange(event){
+    console.log("value", event);
+  }
 }
