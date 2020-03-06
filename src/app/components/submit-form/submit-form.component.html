@@ -1,24 +1,26 @@
 <div class="form-container">
       <mat-form-field>
       <h4>FROM ACCOUNT</h4>
-        <mat-select #fromAcount (change)="onChange($event)">
-          <mat-option *ngFor="let account of accounts" [value]="account.value">
-            {{account.value}}
+        <mat-select
+        #fromAcount
+        (selectionChange)="onChangeFromAccount($event)">
+          <mat-option *ngFor="let account of accounts" [value]="account.id">
+            <span>{{account.value}}</span> - <span> {{account.amount}}</span>
           </mat-option>
         </mat-select>
       </mat-form-field>
 
       <mat-form-field>
         <h4>TO ACCOUNT</h4>
-        <mat-select>
+        <mat-select (selectionChange)="onChangeToAccount($event)">>
           <mat-option *ngFor="let transaction of transactions" [value]="transaction.merchant">
-            <span>{{transaction.merchant}}</span> - <span> {{transaction.amount}}</span>
+            <span>{{transaction.merchant}}</span>
           </mat-option>
         </mat-select>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Amount</mat-label>
-          <input matInput type="number" class="example-right-align">
+          <input matInput type="number" [(ngModel)]="amount" class="example-right-align">
           <span matPrefix>$&nbsp;</span>
           <span matSuffix>.00</span>
       </mat-form-field>
