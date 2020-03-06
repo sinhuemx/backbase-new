@@ -35,6 +35,8 @@ $backbase-theme: mat-light-theme($backbase-primary, $backbase-accent, $backbase-
 
 
 body {
+  min-width: 900px;
+  overflow: auto;
  background: url(./assets/background.jpg) no-repeat center center fixed;
     overflow-x: hidden ;
     mix-blend-mode: inherit;

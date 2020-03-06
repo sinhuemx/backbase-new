@@ -18,28 +18,30 @@ export interface PeriodicElement {
 export class TransactionComponent implements OnInit {
   public displayedColumns: string[] = ['date', 'img', 'user', 'money'];
   public dataSource: MatTableDataSource<Transaction>;
-  //public displayedColumns: Transaction;
 
 
   public transactions: Transaction[];
 
-  constructor(private transactionService: TransactionService) {
-
-
-   }
+  constructor(private transactionService: TransactionService) {}
 
   ngOnInit(): void {
-    this.transactionService.getTransactions().subscribe((result) => {
-      //console.log('JSON data: ', result);
-      //this.transactions = result;
-      //this.displayedColumns = new Transaction();
-      //console.log('okgo', this.displayedColumns);
+    // Getting the data form the endpoint
+    this.transactionService.setData();
+
+    // Getting the data from transactions observable.
+    this.transactionService.transactions.subscribe(result => {
+
       this.dataSource = new MatTableDataSource(result);
+
     });
   }
+
   applyFilter(event: Event) {
+
     const filterValue = (event.target as HTMLInputElement).value;
+
     this.dataSource.filter = filterValue.trim().toLowerCase();
+
   }
 
 }

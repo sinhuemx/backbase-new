@@ -1,4 +1,10 @@
 
 .mat-header-cell.cdk-header-cell {
-  width: 30% !important;
+  width: calc(100% / 4);
+  min-width: 115px;
+}
+
+
+.mat-table.cdk-table.mat-elevation-z8 {
+  width: 100%;
 }
